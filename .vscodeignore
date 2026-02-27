@@ -6,3 +6,4 @@ node_modules/**
 jsconfig.json
 **/*.map
 **/__tests__/**
+*.vsix
