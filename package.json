@@ -4,6 +4,10 @@
     "description": "Format QML files (.qml) with configurable indentation and blank line control",
     "version": "0.1.0",
     "publisher": "qml-formatter",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sanford284/qml-formatter.git"
+    },
     "engines": {
         "vscode": "^1.74.0"
     },
