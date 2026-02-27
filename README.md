@@ -1,4 +1,4 @@
-# QML Formatter
+# noQt QML Formatter
 
 English | [中文](README_zh.md)
 
@@ -15,21 +15,21 @@ A VS Code extension that formats `.qml` files. Pure JavaScript implementation �
 
 ## Installation
 
-1. Download `qml-formatter-0.1.0.vsix`
+1. Download `noQt-qml-formatter-0.1.0.vsix`
 2. Open VS Code or Cursor
 3. Click the **Extensions** icon (or press `Ctrl+Shift+X`)
 4. Click the **...** menu in the top-right → **Install from VSIX...**
-5. Select `qml-formatter-0.1.0.vsix`
+5. Select `noQt-qml-formatter-0.1.0.vsix`
 6. Restart the editor
 
 Or via command line:
 
 ```sh
 # VS Code
-code --install-extension qml-formatter-0.1.0.vsix
+code --install-extension noQt-qml-formatter-0.1.0.vsix
 
 # Cursor
-cursor --install-extension qml-formatter-0.1.0.vsix
+cursor --install-extension noQt-qml-formatter-0.1.0.vsix
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ Add this to your VS Code settings (`settings.json`):
 ```json
 "[qml]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "qml-formatter.qml-formatter"
+    "editor.defaultFormatter": "qml-formatter.noQt-qml-formatter"
 }
 ```
 

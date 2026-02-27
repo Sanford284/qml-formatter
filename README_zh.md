@@ -1,4 +1,4 @@
-# QML Formatter
+# noQt QML Formatter
 
 [English](README.md) | 中文
 
@@ -15,21 +15,21 @@
 
 ## 安装方法
 
-1. 下载 `qml-formatter-0.1.0.vsix`
+1. 下载 `noQt-qml-formatter-0.1.0.vsix`
 2. 打开 VS Code 或 Cursor
 3. 点击左侧**扩展**图标（或按 `Ctrl+Shift+X`）
 4. 点击右上角 **...** 菜单 → **从 VSIX 安装...**
-5. 选择 `qml-formatter-0.1.0.vsix`
+5. 选择 `noQt-qml-formatter-0.1.0.vsix`
 6. 安装完成后重启编辑器
 
 或通过命令行安装：
 
 ```sh
 # VS Code
-code --install-extension qml-formatter-0.1.0.vsix
+code --install-extension noQt-qml-formatter-0.1.0.vsix
 
 # Cursor
-cursor --install-extension qml-formatter-0.1.0.vsix
+cursor --install-extension noQt-qml-formatter-0.1.0.vsix
 ```
 
 ## 使用方法
@@ -49,7 +49,7 @@ QML Formatter: Format Document
 ```json
 "[qml]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "qml-formatter.qml-formatter"
+    "editor.defaultFormatter": "qml-formatter.noQt-qml-formatter"
 }
 ```
 
