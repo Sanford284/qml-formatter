@@ -121,11 +121,21 @@ Item {
 - Parenthesis-based indentation (multi-line function calls) is not tracked.
 - The formatter does not parse QML semantics — it relies on brace structure only.
 
-## Installation from source
+## Installation
 
-1. Clone / copy this folder into your VS Code extensions directory, or open it in VS Code and press **F5** to launch an Extension Development Host.
-2. Install dependencies (optional, only needed for linting):
+1. Download `qml-formatter-0.1.0.vsix`
+2. Open VS Code or Cursor
+3. Click the **Extensions** icon (or press `Ctrl+Shift+X`)
+4. Click the **...** menu in the top-right → **Install from VSIX...**
+5. Select `qml-formatter-0.1.0.vsix`
+6. Restart the editor
+
+Or via command line:
 
 ```sh
-npm install
+# VS Code
+code --install-extension qml-formatter-0.1.0.vsix
+
+# Cursor
+cursor --install-extension qml-formatter-0.1.0.vsix
 ```

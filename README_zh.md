@@ -121,11 +121,21 @@ Item {
 - 不跟踪括号级别的缩进（多行函数调用等）。
 - 格式化器不解析 QML 语义——仅依赖花括号结构进行缩进。
 
-## 从源码安装
+## 安装方法
 
-1. 将此文件夹克隆/复制到 VS Code 扩展目录，或在 VS Code 中打开后按 **F5** 启动扩展开发宿主。
-2. 安装依赖（可选，仅用于代码检查）：
+1. 下载 `qml-formatter-0.1.0.vsix`
+2. 打开 VS Code 或 Cursor
+3. 点击左侧**扩展**图标（或按 `Ctrl+Shift+X`）
+4. 点击右上角 **...** 菜单 → **从 VSIX 安装...**
+5. 选择 `qml-formatter-0.1.0.vsix`
+6. 安装完成后重启编辑器
+
+或通过命令行安装：
 
 ```sh
-npm install
+# VS Code
+code --install-extension qml-formatter-0.1.0.vsix
+
+# Cursor
+cursor --install-extension qml-formatter-0.1.0.vsix
 ```
