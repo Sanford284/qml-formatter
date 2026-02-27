@@ -13,6 +13,25 @@ A VS Code extension that formats `.qml` files. Pure JavaScript implementation �
 - **Blank line collapsing** — consecutive blank lines are reduced to a configurable maximum (default: 1).
 - **Configurable indent size** — default 4 spaces.
 
+## Installation
+
+1. Download `qml-formatter-0.1.0.vsix`
+2. Open VS Code or Cursor
+3. Click the **Extensions** icon (or press `Ctrl+Shift+X`)
+4. Click the **...** menu in the top-right → **Install from VSIX...**
+5. Select `qml-formatter-0.1.0.vsix`
+6. Restart the editor
+
+Or via command line:
+
+```sh
+# VS Code
+code --install-extension qml-formatter-0.1.0.vsix
+
+# Cursor
+cursor --install-extension qml-formatter-0.1.0.vsix
+```
+
 ## Usage
 
 ### Format on demand
@@ -120,22 +139,3 @@ Item {
 - Multi-line string literals (template strings) are not supported in QML so are not handled specially.
 - Parenthesis-based indentation (multi-line function calls) is not tracked.
 - The formatter does not parse QML semantics — it relies on brace structure only.
-
-## Installation
-
-1. Download `qml-formatter-0.1.0.vsix`
-2. Open VS Code or Cursor
-3. Click the **Extensions** icon (or press `Ctrl+Shift+X`)
-4. Click the **...** menu in the top-right → **Install from VSIX...**
-5. Select `qml-formatter-0.1.0.vsix`
-6. Restart the editor
-
-Or via command line:
-
-```sh
-# VS Code
-code --install-extension qml-formatter-0.1.0.vsix
-
-# Cursor
-cursor --install-extension qml-formatter-0.1.0.vsix
-```

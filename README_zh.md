@@ -13,6 +13,25 @@
 - **空行合并** — 连续空行将被压缩到可配置的最大数量（默认：1）。
 - **可配置缩进大小** — 默认 4 个空格。
 
+## 安装方法
+
+1. 下载 `qml-formatter-0.1.0.vsix`
+2. 打开 VS Code 或 Cursor
+3. 点击左侧**扩展**图标（或按 `Ctrl+Shift+X`）
+4. 点击右上角 **...** 菜单 → **从 VSIX 安装...**
+5. 选择 `qml-formatter-0.1.0.vsix`
+6. 安装完成后重启编辑器
+
+或通过命令行安装：
+
+```sh
+# VS Code
+code --install-extension qml-formatter-0.1.0.vsix
+
+# Cursor
+cursor --install-extension qml-formatter-0.1.0.vsix
+```
+
 ## 使用方法
 
 ### 手动格式化
@@ -120,22 +139,3 @@ Item {
 - 不支持多行字符串字面量（QML 本身也不支持模板字符串，故不作特殊处理）。
 - 不跟踪括号级别的缩进（多行函数调用等）。
 - 格式化器不解析 QML 语义——仅依赖花括号结构进行缩进。
-
-## 安装方法
-
-1. 下载 `qml-formatter-0.1.0.vsix`
-2. 打开 VS Code 或 Cursor
-3. 点击左侧**扩展**图标（或按 `Ctrl+Shift+X`）
-4. 点击右上角 **...** 菜单 → **从 VSIX 安装...**
-5. 选择 `qml-formatter-0.1.0.vsix`
-6. 安装完成后重启编辑器
-
-或通过命令行安装：
-
-```sh
-# VS Code
-code --install-extension qml-formatter-0.1.0.vsix
-
-# Cursor
-cursor --install-extension qml-formatter-0.1.0.vsix
-```
