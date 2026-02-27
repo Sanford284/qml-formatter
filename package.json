@@ -1,0 +1,73 @@
+{
+    "name": "qml-formatter",
+    "displayName": "QML Formatter",
+    "description": "Format QML files (.qml) with configurable indentation and blank line control",
+    "version": "0.1.0",
+    "publisher": "qml-formatter",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Formatters",
+        "Programming Languages"
+    ],
+    "keywords": [
+        "qml",
+        "qt",
+        "formatter",
+        "format"
+    ],
+    "activationEvents": [
+        "onLanguage:qml"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "languages": [
+            {
+                "id": "qml",
+                "aliases": [
+                    "QML",
+                    "Qt Modeling Language"
+                ],
+                "extensions": [
+                    ".qml"
+                ]
+            }
+        ],
+        "commands": [
+            {
+                "command": "qml-formatter.formatDocument",
+                "title": "QML Formatter: Format Document"
+            }
+        ],
+        "configuration": {
+            "title": "QML Formatter",
+            "properties": {
+                "qmlFormatter.indentSize": {
+                    "type": "number",
+                    "default": 4,
+                    "minimum": 1,
+                    "maximum": 8,
+                    "description": "Number of spaces per indentation level"
+                },
+                "qmlFormatter.maxBlankLines": {
+                    "type": "number",
+                    "default": 1,
+                    "minimum": 0,
+                    "maximum": 5,
+                    "description": "Maximum number of consecutive blank lines allowed"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.74.0",
+        "@vscode/vsce": "^3.0.0",
+        "eslint": "^8.28.0"
+    }
+}
