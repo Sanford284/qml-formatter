@@ -62,7 +62,7 @@ function activate(context) {
     // Delegates to the standard formatDocument command so the registered
     // provider above does the actual work.
     const formatCommand = vscode.commands.registerCommand(
-        'qml-code-formatter.formatDocument',
+        'noQt-qml-formatter.formatDocument',
         () => {
             const editor = vscode.window.activeTextEditor;
             if (!editor) {

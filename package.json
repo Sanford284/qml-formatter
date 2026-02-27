@@ -1,6 +1,6 @@
 {
-    "name": "qml-code-formatter",
-    "displayName": "QML Formatter",
+    "name": "noQt-qml-formatter",
+    "displayName": "noQt QML Formatter",
     "description": "Format QML files (.qml) with configurable indentation and blank line control",
     "version": "0.1.0",
     "publisher": "qml-formatter",
@@ -40,7 +40,7 @@
         ],
         "commands": [
             {
-                "command": "qml-code-formatter.formatDocument",
+                "command": "noQt-qml-formatter.formatDocument",
                 "title": "QML Formatter: Format Document"
             }
         ],
